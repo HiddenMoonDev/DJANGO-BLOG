@@ -6,7 +6,6 @@
 
 {% block page_content %}
   {% block blogs %}
-    <a href='{% url "create_blog" %}'>Create Post</a>
   
       {% for blog in blogs %}
         <h3>{{ blog.title }}</h3>
