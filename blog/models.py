@@ -6,11 +6,11 @@ class Category(models.Model):
 
   class Meta:
     verbose_name_plural = "categories"
-  ###
+  
 
   def __str__(self):
     return self.name
-###
+
 
 class Post(models.Model):
   title = models.CharField(max_length=20)
@@ -23,7 +23,7 @@ class Post(models.Model):
 
   def __str__(self):
     return self.title
-###
+
 
 class Comment(models.Model):
   author = models.CharField(max_length=20)
@@ -33,4 +33,3 @@ class Comment(models.Model):
   
   def __str__(self):
     return f"{self.author} on '{self.post}'"
-###
