@@ -9,7 +9,11 @@
   </head>
   
   <body>
-    <a href="{% url "home" %}">Home</a>
+    <nav>
+      <a href="{% url "home" %}" class="current">Home</a>
+      <a href='{% url "create_blog" %}' class="current">Create Post</a>
+    </nav>
+    
     {% block page_title %}{% endblock page_title %}
     {% block page_content %}{% endblock page_content %}
   </body>
