@@ -18,7 +18,7 @@ class BlogForm(forms.Form):
       attrs={'class': 'form-control', 'placeholder': 'Enter your blog title here', 'required': True, 'maxlength': 10, 'name': 'title'}
     )
   )
-#
+
 
 class CommentForm(forms.Form):
   author = forms.CharField(max_length=10,
